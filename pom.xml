@@ -24,7 +24,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://https://avatars1.githubusercontent.com/u/65855878?s=400&u=efa18f9946c8b4b0b7fc9e4818f73aece8ac8984&v=4</picUrl>
+        <picUrl>https://avatars1.githubusercontent.com/u/65855878</picUrl>
       </properties>
     </developer>
     <developer>
@@ -39,7 +39,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars3.githubusercontent.com/u/62704168?s=400&u=36e0e3907a6f269b4111f68c7cd91719f904b30c&v=4</picUrl>
+        <picUrl>https://avatars3.githubusercontent.com/u/62704168</picUrl>
       </properties>
     </developer>
   </developers>
@@ -87,4 +87,34 @@
       </plugin>
     </plugins>
   </build>
+
+<reporting>
+        <plugins>
+		
+            <!-- maven site for documentation -->
+			<!-- manual upgraded maven site plugin, because 3.3 had an error -->
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+        </plugins>
+    </reporting>
+	
+    <!-- define SCM and will be read by generating maven site -->
+    <scm>
+        <connection>scm:git:https://github.com/michaelulm/software-configuration-management</connection>
+        <developerConnection>scm:git:https://github.com/michaelulm/software-configuration-management</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/michaelulm/software-configuration-management</url>
+    </scm>
+
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
 </project>
