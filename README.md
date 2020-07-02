@@ -4,37 +4,16 @@
 
 ## Test Automation with JUnit5 ##
 
-### Queue Exercise ###
+### 20-Abgabe02-Kriegl-Holeckova ###
 
-**Basic Exercise:**
+**Short description**
 
-- implement test methods for StringQueue
-- try to get 100% Test Coverage
+This project includes the interface IQueue and the class StringQueue which implements the interface IQueue. The StringQueue class is an implementation a Queue for Strings. Furthermore the project includes the Testclass for StringQueue, which will have a 100% test-coverage.  
 
-the final class structure should be
+**Task List**
 
-- 1 test class
-- 1 source class
-
-*Only Basic Exercise necessary for final exercise in summer term 2019*
-
-**Extended Exercise:**
-
-- create Integer Queue Implementation (new class)
-- implement test methods for IntQueue
-- try to get 100% Test Coverage
-
-the final class structure should be
-
-- 2 test classes
-- 2 source classes
-
-**Advanced Exercise:**
-
-- create new Abstract Class with Generics
-- implement both 
-
-the final class structure should be
-
-- 2 test classes
-- ONLY 1 source class
+- [x] Create repository
+- [x] Clone existing repository from Michael Ulm's Github
+- [x] Insert userdata into pom.xml
+- [x] Short description in readme
+- [x] Create IntelliJ project from existing resource
