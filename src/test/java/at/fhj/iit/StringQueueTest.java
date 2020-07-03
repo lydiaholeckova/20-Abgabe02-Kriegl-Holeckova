@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.util.NoSuchElementException;
 
 /**
+ * @author Marlene Kriegl
  * This is the test class for the class StringQueue.
  * All methods of StringQueue will be tested, so that a test-coverage of 100% can be reached.
  */
