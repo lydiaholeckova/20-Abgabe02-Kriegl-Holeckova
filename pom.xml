@@ -85,28 +85,43 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
       </plugin>
-    </plugins>
-  </build>
 
-<reporting>
-        <plugins>
-		
-            <!-- maven site for documentation -->
-			<!-- manual upgraded maven site plugin, because 3.3 had an error -->
-            <plugin>
+<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
+
+<dependencies>
+          <dependency>
+            <groupId>org.apache.maven.doxia</groupId>
+            <artifactId>doxia-module-markdown</artifactId>
+            <version>1.9</version>
+          </dependency>
+        </dependencies>
+
             </plugin>
-        </plugins>
-    </reporting>
+
+            <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.1.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+      </plugin>
+
+    </plugins>
+  </build>
+
 	
     <!-- define SCM and will be read by generating maven site -->
     <scm>
-        <connection>scm:git:https://github.com/michaelulm/software-configuration-management</connection>
-        <developerConnection>scm:git:https://github.com/michaelulm/software-configuration-management</developerConnection>
+        <connection>scm:git:https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova.git</connection>
+        <developerConnection>scm:git:https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova</developerConnection>
         <tag>HEAD</tag>
-        <url>https://github.com/michaelulm/software-configuration-management</url>
+        <url>https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova</url>
     </scm>
 
 
