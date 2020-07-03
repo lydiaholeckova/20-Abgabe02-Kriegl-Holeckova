@@ -85,22 +85,14 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
       </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.7.1</version>
+        </plugin>
     </plugins>
   </build>
-
-  <reporting>
-        <plugins>
-		
-            <!-- maven site for documentation -->
-			<!-- manual upgraded maven site plugin, because 3.3 had an error -->
-            <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.7.1</version>
-            </plugin>
-        </plugins>
-    </reporting>
-	
+    
     <!-- define SCM and will be read by generating maven site -->
      <scm>
         <connection>scm:git:https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova.git</connection>
