@@ -17,7 +17,7 @@ public class StringQueue implements IQueue<String> {
     this.maxSize = maxsize;
   }
 
- 
+
   public boolean offer(String obj) {
     if (elements.size() != maxSize)
       elements.add(obj);
