@@ -52,7 +52,7 @@ public class GenericQueue<T> implements IQueue<T> {
 
     /**
      * This method throws Exception if the Queue is empty
-     * @return
+     * @return element
      */
     public T remove() {
         T element = poll();
