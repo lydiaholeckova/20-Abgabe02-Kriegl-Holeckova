@@ -61,6 +61,11 @@ public class GenericQueue<T> implements IQueue<T> {
 
         return element;
     }
+
+    /**
+     * This method returns head element but it does not delete it.
+     * @return element - the first element in the queue (head)
+     */
     public T peek() {
         T element;
         if (elements.size() > 0)
@@ -70,6 +75,11 @@ public class GenericQueue<T> implements IQueue<T> {
 
         return element;
     }
+
+    /**
+     * It throws NoSuchElementException when the queue is empty.
+     * @return element - the first element in the queue (head)
+     */
     public T element() {
         T element = peek();
         if (element == null)
