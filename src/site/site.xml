@@ -1,3 +1,11 @@
 <project name="Abgabe 02 Kriegl - Holeckova">
     <publishDate position="none "/>
+    <body>
+
+        <menu name="Configuration management - Project Queue">
+            <item name="Introduction" href="index.html"/>
+        </menu>
+
+        <menu ref="reports"/>
+    </body>
 </project>
