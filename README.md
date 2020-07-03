@@ -17,3 +17,12 @@ This project includes the interface IQueue and the class StringQueue which imple
 - [x] Insert userdata into pom.xml
 - [x] Short description in readme
 - [x] Create IntelliJ project from existing resource
+- [x] Create Lab-Reort
+- [ ] Debugging (Find Buggs and correct them)
+- [ ] Implementation with Generics
+- [ ] Implement Testclass for StringQueue
+- [ ] Implement Testclass for GenericQueue
+- [ ] Optional - implement additional Testclass for GenericQueue
+- [ ] Create Maven site documentation
+  - [ ] Javadoc
+  - [ ] code-snippets
