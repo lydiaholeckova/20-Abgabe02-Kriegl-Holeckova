@@ -24,7 +24,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://https://avatars1.githubusercontent.com/u/65855878?s=400&u=efa18f9946c8b4b0b7fc9e4818f73aece8ac8984&v=4</picUrl>
+        <picUrl>https://avatars1.githubusercontent.com/u/65855878</picUrl>
       </properties>
     </developer>
     <developer>
@@ -39,7 +39,7 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars3.githubusercontent.com/u/62704168?s=400&u=36e0e3907a6f269b4111f68c7cd91719f904b30c&v=4</picUrl>
+        <picUrl>https://avatars3.githubusercontent.com/u/62704168</picUrl>
       </properties>
     </developer>
   </developers>
@@ -85,6 +85,51 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
       </plugin>
+
+<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+
+<dependencies>
+          <dependency>
+            <groupId>org.apache.maven.doxia</groupId>
+            <artifactId>doxia-module-markdown</artifactId>
+            <version>1.9</version>
+          </dependency>
+        </dependencies>
+
+            </plugin>
+
+            <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.1.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+      </plugin>
+
     </plugins>
   </build>
+
+	
+    <!-- define SCM and will be read by generating maven site -->
+    <scm>
+        <connection>scm:git:https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova.git</connection>
+        <developerConnection>scm:git:https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/lydiaholeckova/20-Abgabe02-Kriegl-Holeckova</url>
+    </scm>
+
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
 </project>
